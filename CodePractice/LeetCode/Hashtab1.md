@@ -30,7 +30,6 @@ hashSet.contains(2);    // 返回  false (已经被删除)
 ### 题解：
 ```C++
 
-
 #include <iostream>
 
 
@@ -142,28 +141,19 @@ public:
  * obj->remove(key);
  * bool param_3 = obj->contains(key);
  */
-/**
- * Your MyHashSet object will be instantiated and called as such:
- * MyHashSet* obj = new MyHashSet();
- * obj->add(key);
- * obj->remove(key);
- * bool param_3 = obj->contains(key);
- */
-
 
 int main()
 {
 
-	MyHashSet tcs = MyHashSet();
-    MyHashSet hashSet = new MyHashSet();
-    hashSet.add(1);         
-    hashSet.add(2);         
-    cout << hashSet.contains(1);    // 返回 true
-    cout << hashSet.contains(3);    // 返回 false (未找到)
-    hashSet.add(2);          
-    cout << hashSet.contains(2);    // 返回 true
-    hashSet.remove(2);          
-    cout << hashSet.contains(2);    // 返回  false (已经被删除)
+	MyHashSet hashSet = MyHashSet();
+	hashSet.add(1);
+	hashSet.add(2);
+	cout << hashSet.contains(1);  // 返回 true
+	cout << hashSet.contains(3);  // 返回 false (未找到)
+	hashSet.add(2);
+	cout << hashSet.contains(2);  // 返回 true
+	hashSet.remove(2);
+	cout << hashSet.contains(2);  // 返回  false (已经被删除)
 }
  
 ```
