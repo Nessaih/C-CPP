@@ -10,7 +10,7 @@
 >* 只需要根据以上规则，验证已经填入的数字是否有效即可。
 
 示例 1：
-![picture1](https://github.com/Nessaih/C-CPP/blob/main/pictures/LC_isValidSudoku_1.png)
+![picture2](https://github.com/Nessaih/C-CPP/blob/main/pictures/LC_isValidSudoku_2.png)
 
 **输入：**
 ```
@@ -53,7 +53,7 @@ board =
 + 使`i = 0 ~ 8,j = 0 ~ 8` ,取坐标位置`(i,j)、(j,i)`可以分别完成行和列的遍历，难点在于如何设计每块的数组下表位置更新。
 + 记每块的数据为`(x,y)`,只需要令`x = [i/3*3+j/3] , y = [i%3*3+j%3]`,则可实现依次对每块（子数独）的遍历。
 
-![picture2](https://github.com/Nessaih/C-CPP/blob/main/pictures/LC_isValidSudoku_2.png)
+![picture1](https://github.com/Nessaih/C-CPP/blob/main/pictures/LC_isValidSudoku_1.png)
 
 **扩展--观察规律，可以发现：**
 
